@@ -1,4 +1,10 @@
-import { Module } from '@nestjs/common';
+import { Module } from '@nestjs/common'
 
-@Module({})
+import { OpenIaController } from './controller/.controller'
+
+@Module({
+  imports: [],
+  providers: [],
+  controllers: [OpenIaController]
+})
 export class OpenIaModule {}
